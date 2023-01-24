@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e2e2e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #191919;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+header nav ul a {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #f7f7f7;
+  padding: 2px 12px;
+  letter-spacing: 0.01em;
+}
+
+.logo {
+  font-family: "Righteous", cursive;
+  text-decoration: none;
+  color: #f7f7f7;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 34px;
+  letter-spacing: 0.01em;
+}
+
+.contato {
+  color: #e51c3e;
+  border: 1px solid #e51c3e;
+  border-radius: 10px;
+  padding: 7px 14px;
+}
+
+.rosa {
+  color: #e51c3e;
+}
+.headline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  padding-left: 102px;
+  padding-right: 102px;
+  align-items: center;
+}
+
+.headline-txt {
+  justify-self: end;
+}
+
+.headline-txt h1 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 155px;
+  /* or 86% */
+
+  text-align: right;
+
+  color: #f7f7f7;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.areas h3 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 48px;
+  color: #f7f7f7;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-self: end;
+  text-align: right;
+}
+
+.areas img {
+  margin-left: 214px;
+  text-align: right;
+}
+.areas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 3;
+  margin-top: 40px;
+}
+
+.areas li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.risco {
+  width: 90%;
+  background-color: #e51c3e;
+  opacity: 0.2;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-habilidades {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  color: #f7f7f7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 65px;
+}
+
+#habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+#habilidades div {
+  background: rgba(53, 53, 53, 0.9);
+  border: 4px solid #e51c3e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 2px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  width: 380px;
+}
+
+#habilidades div img {
+  display: block;
+  margin: 35px auto 23px auto;
+}
+
+#habilidades p {
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 0.02em;
+  color: #d7d4d4;
+  text-align: left;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+}
+
+.formacao {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  padding-left: 102px;
+  padding-right: 102px;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 128px;
+}
+.formacao h1 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 197px;
+  line-height: 155px;
+  color: #f7f7f7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formacao h2 {
+  display: none;
+}
+.formacao p {
+  padding-top: 55px;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  color: #d7d4d4;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.formacao img {
+  justify-self: right;
+}
+
+footer {
+  background: #191919;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h4 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  color: #9c9c9c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.branco {
+  color: #f7f7f7;
+}
+
+@media (max-width: 1050px) {
+  header nav {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    margin: auto;
+  }
+
+  header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    height: auto;
+    width: 100%;
+  }
+  .logo {
+    margin-bottom: 7px;
+  }
+  .headline {
+    grid-template-columns: 1fr;
+    justify-content: left;
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .headline-txt {
+    justify-self: start;
+  }
+  .headline-img {
+    display: none;
+  }
+  .headline h1 {
+    font-size: 100px;
+    align-self: left;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .headline h3 {
+    justify-self: left;
+    text-align: left;
+    padding-right: 0px;
+    font-size: 39;
+  }
+
+  .headline-txt img {
+    margin-left: 0;
+
+    padding: 0;
+  }
+
+  .risco {
+    width: 80%;
+    margin-top: -10px;
+  }
+
+  .titulo-habilidades {
+    font-size: 55px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .formacao {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    justify-items: left;
+    justify-content: left;
+    max-width: 100%;
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .formacao h1 {
+    display: none;
+  }
+  .formacao h2 {
+    display: block;
+    font-size: 55px;
+    text-align: left;
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: 400;
+    color: #f7f7f7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 70px;
+  }
+
+  .formacao p {
+    font-size: 19px;
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .formacao img {
+    max-width: 100%;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  #habilidades div {
+    width: 90%;
+  }
+}
