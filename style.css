@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap");
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #e51c3e 0%, #fd3440 100%);
+  box-shadow: 0px 2px 4px #e51c3d77;
+  box-shadow: 0px -2px 4px #e51c3d77;
+  border-radius: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
