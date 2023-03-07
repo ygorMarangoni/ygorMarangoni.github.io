@@ -205,7 +205,7 @@ header {
   height: 50px;
   z-index: 5;
   filter: drop-shadow(0px 0px 6px #e51c3d1e);
-  border: 1px solid #e51c3e;
+  border: 2px solid #e51c3e;
   transition: 0.3s;
 }
 
