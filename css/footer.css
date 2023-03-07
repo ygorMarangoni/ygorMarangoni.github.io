@@ -1,0 +1,20 @@
+footer {
+  background-color: #191919;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  justify-self: center;
+  display: block;
+  font-family: "Righteous";
+  font-size: 28px;
+  color: #9c9c9c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.white {
+  color: #f7f7f7;
+}

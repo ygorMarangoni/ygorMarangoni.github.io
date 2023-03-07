@@ -1,0 +1,230 @@
+header {
+  display: flex;
+  padding: 20px 110px;
+  align-items: center;
+  height: 55px;
+  justify-content: space-between;
+  background-color: #191919;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.purple {
+  background-image: linear-gradient(
+    180deg,
+    var(--gradiente-1) 36.36%,
+    var(--gradiente-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  text-decoration: none;
+  font-family: "Righteous";
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  margin-left: 55px;
+  font-family: "Righteous";
+  font-size: 26px;
+  color: var(--white);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.menu li .menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(180deg, #e51c3e 60%, #fd3440 100%);
+  border-radius: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.menu li .menu-item:hover::after {
+  transform: scaleX(1);
+  z-index: 9000000;
+}
+
+.button-4 {
+  width: 130px;
+  height: 50px;
+  border: 1px solid #e51c3e;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-left: 55px;
+  box-sizing: border-box;
+}
+.button-4 a {
+  font-family: "Righteous";
+  font-size: 26px;
+  color: #e51c3e;
+  text-decoration: none;
+  line-height: 50px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+  left: 0px;
+}
+.eff-4 {
+  width: 140px;
+  height: 50px;
+  left: -140px;
+  background: #e51c3e;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.button-4:hover .eff-4 {
+  left: 0;
+}
+.button-4:hover a {
+  color: #191919;
+}
+
+/*menu mobile*/
+
+.menu-mobile {
+  position: fixed;
+  bottom: 24px;
+  right: 23px;
+  display: none;
+  place-items: center;
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 10px #e51c3d1a);
+  z-index: 20;
+}
+
+.menu-mobile ul {
+  background-color: #464646;
+  list-style: none;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0;
+  transition: 0.3s all;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: scale(0);
+  border-radius: 5px;
+  border: 2px solid #e51c3e;
+}
+
+.menu-mobile ul.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.menu-mobile ul li a {
+  padding: 10px 40px;
+  display: block;
+  border-bottom: 2px solid #414141;
+  font-size: 20px;
+  color: #f7f7f7;
+  text-decoration: none;
+  font-family: "Righteous";
+  letter-spacing: 0.5px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.span-div span {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 10px;
+  width: 30px;
+  height: 2px;
+  border-top: 3px solid #e51c3e;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 2px #e51c3d1a);
+  z-index: 20;
+}
+
+.span-div span::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  width: 30px;
+  border-top: 3px solid #e51c3e;
+  filter: drop-shadow(0px 0px 2px #e51c3d1a);
+  z-index: 6;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.span-div span::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 30px;
+  border-top: 3px solid #e51c3e;
+  filter: drop-shadow(0px 0px 2px #e51c3d1a);
+  z-index: 6;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.span-div span.active {
+  border-top-color: transparent;
+}
+
+.span-div span.active::before {
+  transform: rotate(-135deg);
+  top: -2px;
+}
+
+.span-div span.active::after {
+  transform: rotate(135deg);
+  top: -2px;
+}
+.span-div {
+  background-color: #191919;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -15px;
+  right: -10px;
+  height: 50px;
+  z-index: 5;
+  filter: drop-shadow(0px 0px 6px #e51c3d1e);
+  border: 1px solid #e51c3e;
+  transition: 0.3s;
+}
+
+.span-div.active {
+  filter: none;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  header {
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+}

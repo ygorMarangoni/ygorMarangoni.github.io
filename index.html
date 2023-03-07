@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -7,88 +7,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ygor Marangoni - Currículo</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="haaa.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <a href="#" class="logo"><span class="rosa">Y</span>gor <span class="rosa">M</span>arangoni </a>
-    <nav>
-      <ul>
-        <li><a href="#hab"><span class="rosa">H</span>abilidade</a></li>
-        <li><a href="#form"><span class="rosa">F</span>ormação</a></li>
-        <li><a href="#" class="contato">Contato</a></li>
+    <a class="logo" href="index.html"> <span class="purple">Y</span>gor <span class="purple">M</span>arangoni </a>
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a class="menu-item" href="#servicos"><span class="purple">S</span>erviços</a></li>
+        <li><a class="menu-item" href="#projetos"><span class="purple">P</span>rojetos</a></li>
+        <li><a class="menu-item" href="#formacao"><span class="purple">F</span>ormação</a></li>
+        <div class="button-4">
+          <div class="eff-4"></div>
+          <a href="https://wa.me/5516992006155?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seu+trabalho+%21%21" target="_blank"> Contato </a>
+        </div>
       </ul>
     </nav>
+
+    <div class="menu-mobile">
+      <ul>
+        <li><a style="margin-top: 5px; z-index: 9000000;" href="#servicos">
+            <strong class="purple">S</strong>erviços
+          </a></li>
+        <li><a href="#projetos""><strong class=" purple">P</strong>rojetos</a></li>
+        <li><a href="#formacao"><strong class="purple">F</strong>ormação</a></li>
+        <li><a style="margin-bottom: 5px; border: none;" href="https://wa.me/5516992006155?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seu+trabalho+%21%21" target="_blank"><strong class="purple">C</strong>ontato</a></li>
+      </ul>
+      <div class="span-div">
+        <span> </span>
+      </div>
+    </div>
   </header>
 
-  <section class="headline">
-    <div class="headline-img">
-      <img style="width: 60%px; display:block; max-width: 100%;" src="imagem.png" alt="">
-    </div>
-    <div class="headline-txt">
-      <h1><span class="rosa">D</span>esen</h1>
-      <h1><span class="rosa">v</span>olve</h1>
-      <h1><span class="rosa">d</span>or</h1>
-      <ul class="areas">
-        <li>
-          <img src="frontend-icon.png" alt="">
-          <h3>Front-End</h3>
-        </li>
-        <li>
-          <img src="ui-disign-icon.png" alt="">
-          <h3>Ui Disign</h3>
-        </li>
-        <li>
-          <img src="ux-disign-icon.png" alt="">
-          <h3>Ux Disign</h3>
-        </li>
+  <main>
+    <section class="head-line">
+      <div class="head-line-img">
+        <img src="imgs/head-line-img.png" alt="">
+      </div>
+      <div class="head-line-txt">
+        <h2><span class="purple">D</span>esen<br><span class="purple">v</span>olve<br><span class="purple">d</span>or</h2>
+        <p><span class="mdi mdi-keyboard purple"></span> Front-End</p>
+        <p><span class="mdi mdi-draw-pen purple "></span> Ui Disign</p>
+      </div>
+    </section>
+    <article class="servicos" id="servicos">
+      <h2><span class="purple">S</span>erviços</h2>
+      <div class="cards">
+        <div>
+          <img src="imgs/website-img.png" alt="">
+          <h3><span class="purple">W</span>ebsite</h3>
+          <p>Criação de um site para com a identidade da sua marca ou empresa !!</p>
+          <a href="">SOLICITAR ORÇAMENTO</a>
+        </div>
+        <div>
+          <img src="imgs/landpage-img.png" alt="">
+          <h3><span class="purple">L</span>anding <span class="purple">P</span>age</h3>
+          <p>Criação de uma Landing Page para seu produto ou serviço !!</p>
+          <a href="">SOLICITAR ORÇAMENTO</a>
+        </div>
+        <div>
+          <img src="imgs/social-linking-img.png" alt="">
+          <h3><span class="purple">S</span>ocial <span class="purple">L</span>inking</h3>
+          <p>Criação de uma árvore de links para sua página nas redes socias !!</p>
+          <a href="">SOLICITAR ORÇAMENTO</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="slider" id="projetos">
+
+      <h2><span class="purple">P</span>rojetos</h2>
+      <ul class="custom-controls">
+        <li style=" border: 2px solid #e51c3e;"><img src="imgs/thumb-1.png" alt=""></li>
+        <li style=" border: 2px solid #e51c3e;"><img src="imgs/thumb-1.png" alt=""></li>
+        <li style=" border: 2px solid #e51c3e;"><img src="imgs/thumb-1.png" alt=""></li>
+        <li style=" border: 2px solid #e51c3e;"><img src="imgs/thumb-1.png" alt=""></li>
       </ul>
-    </div>
-  </section>
+      <div class="slide-wrapper">
+        <ul class="slide">
+          <li><img src="imgs/slide-1.png" alt="">
+            <p class="slide-p" text-align: center;"> Tecnologias usadas: <span class="purple mdi mdi-language-html5"></span> <span class="purple mdi mdi-language-css3"></span> <span class="purple mdi mdi-language-javascript"></span> </p>
+            <p class="slider-link"><span class="purple"> Link:</span> <a href="">www.wdadadada.com.br</a></p>
+          </li>
+          <li><img src="imgs/slide-1.png" alt="">
+            <p class="slide-p" text-align: center;"> Tecnologias usadas: <span class="purple mdi mdi-language-html5"></span> <span class="purple mdi mdi-language-css3"></span> <span class="purple mdi mdi-language-javascript"></span> </p>
+            <p class="slider-link"><span class="purple"> Link:</span> <a href="">www.wdadadada.com.br</a></p>
+          </li>
+          <li><img src="imgs/slide-1.png" alt="">
+            <p class="slide-p" text-align: center;"> Tecnologias usadas: <span class="purple mdi mdi-language-html5"></span> <span class="purple mdi mdi-language-css3"></span> <span class="purple mdi mdi-language-javascript"></span> </p>
+            <p class="slider-link"><span class="purple"> Link:</span> <a href="">www.wdadadada.com.br</a></p>
+          </li>
+          <li><img src="imgs/slide-1.png" alt="">
+            <p class="slide-p" text-align: center;"> Tecnologias usadas: <span class="purple mdi mdi-language-html5"></span> <span class="purple mdi mdi-language-css3"></span> <span class="purple mdi mdi-language-javascript"></span></p>
+            <p class="slider-link"><span class="purple"> Link:</span> <a href="">www.wdadadada.com.br</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="arrow-nav">
+        <button class="prev"></button>
+        <button class="next"></button>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <span class="line-slider"></span>
+      </div>
+    </article>
 
-  <div style="display: flex; justify-content: center; margin-top: 100px;">
-    <div id="hab" class="risco"></div>
-  </div>
+    <section class="formacao" id="formacao">
+      <div class="formacao-txt">
+        <h2><span class="purple">F</span>orma<br>ção:</h2>
+        <p><span class="purple mdi mdi-school-outline"></span> HTML e CSS para Iniciantes.</p>
+        <p><span class="purple mdi mdi-school-outline"></span> UI Design para Iniciantes. </p>
+        <p><span class="purple mdi mdi-school-outline"></span> CSS Flexbox. </p>
+        <p><span class="purple mdi mdi-school-outline"></span> CSS Grid Layout.</p>
+        <p><span class="purple mdi mdi-school-outline"></span> JavaScript Completo ES6.</p>
+      </div>
 
-  <h1 class="titulo-habilidades"><span class="rosa">H</span>abilidades</h1>
-
-  <section id="habilidades">
-    <div>
-      <img src="html.png" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Desert doloremque quos quam, nobis voluptates ipsum non aspernatur at doloribus eius.</p>
-    </div>
-
-    <div>
-      <img src="js.png" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dodsaloremque os quam, nobis voluptates ipsum non aspernatur at doloribus eius.</p>
-
-    </div>
-
-    <div>
-      <img src="css.png" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt doloremque quos quam, nobis voluptates ipsum non aspernatur at doloribus eius.</p>
-    </div>
-  </section>
-
-  <div id="form" style="display: flex; justify-content: center; margin-top: 100px;">
-    <div class="risco"></div>
-  </div>
-
-  <section class="formacao">
-    <div>
-      <h1><span class="rosa">F</span>orma</h1>
-      <h1>ção</h1>
-      <h2><span class="rosa">F</span>ormação</h2>
-      <p>Eu amo abacate Eu amods abacate Eu amo abacated Eu amo abacate Eu amods abacate Eu amo.</p>
-    </div>
-    <img src="origamid.png" alt="">
-  </section>
-
+      <div class="formacao-img">
+        <img src="imgs/fomacao-img.png" alt="">
+      </div>
+    </section>
+  </main>
   <footer>
-    <h4>© 2023 <span class="rosa">Y</span><span class="branco">gor</span> <span class="rosa">M</span><span class="branco">arangoni</span> todos direitos reservados</h4>
+    <p style="text-align: center;">© 2023 <span class="purple">Y</span><span class="white">gor</span> <span class="purple">M</span><span class="white">arangoni</span> todos direitos reservados</p>
+
   </footer>
 
+  <script type="module" src="js/script.js"></script>
+  <script src="js/menu-mobile.js"></script>
 </body>
 
 </html>

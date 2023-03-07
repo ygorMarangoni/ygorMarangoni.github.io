@@ -1,0 +1,140 @@
+.servicos {
+  margin: 60px 110px;
+}
+
+.servicos h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Righteous";
+  font-size: 120px;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  border-bottom: 2px solid rgba(176, 40, 63, 0.2);
+}
+
+.cards div {
+  width: 360px;
+  margin-left: 60px;
+  border: 2px solid #e51c3e;
+  display: grid;
+  justify-content: center;
+  padding: 0px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #e51c3d27;
+  margin-bottom: 70px;
+}
+
+.cards div img {
+  justify-self: center;
+  margin-top: 15px;
+}
+
+.cards div h3 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cards div p {
+  margin: 0px;
+  margin-top: 5px;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #d7d4d4;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cards div a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 8px;
+  text-align: center;
+  border: 2px solid #e51c3e;
+  padding: 10px;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #e51c3e 0%, #fd3440 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: growth 3s linear infinite;
+  box-shadow: 0px 0px 10px #e51c3d27;
+  filter: drop-shadow(0px 0px 3px #e51c3d27);
+}
+
+@media (max-width: 1200px) {
+  .servicos {
+    margin: 60px 110px;
+  }
+
+  .servicos h2 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .servicos h2 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+  }
+  .servicos {
+    margin: 60px 35px;
+  }
+
+  .cards div {
+    width: 100%;
+    border: 2px solid #e51c3e;
+    margin: 60px auto;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 396px) {
+  .servicos h2 {
+    justify-self: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes growth {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

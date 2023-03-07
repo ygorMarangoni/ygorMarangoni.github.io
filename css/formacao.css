@@ -1,0 +1,88 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 110px;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.formacao-txt h2 {
+  font-family: "Righteous";
+  font-size: 197px;
+  line-height: 190px;
+  color: var(--white);
+  letter-spacing: 3px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.116);
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.formacao-txt p {
+  font-family: "K2D";
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: #d7d4d4;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.formacao-img {
+  justify-self: end;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 1450px) {
+  .formacao-img img {
+    justify-self: end;
+  }
+
+  .formacao-txt h2 {
+    font-size: 157px;
+    line-height: 150px;
+  }
+
+  .formacao {
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .formacao {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-img img {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .formacao-img {
+    margin-top: 50px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .formacao {
+    padding: 0px 0px;
+  }
+
+  .formacao-txt {
+    padding-left: 35px;
+  }
+
+  .formacao-txt h2 {
+    font-size: 95px;
+    line-height: 90px;
+  }
+}
+
+@media (max-width: 360px) {
+  .formacao-txt p {
+    font-size: 18px;
+  }
+}
